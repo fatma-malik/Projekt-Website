@@ -96,11 +96,32 @@ let books = [{
     genre: "Dystopian",
     stars: 4,
     picture: "https://images.thalia.media/07/-/6b9d99927c504934bc35a6144864cc41/the-hunger-games-hunger-games-book-one-taschenbuch-suzanne-collins-englisch.jpeg"
+  },{
+    name: "Hunger Games 2",
+    genre: "Dystopian",
+    stars: 4,
+    picture: "https://images.thalia.media/00/-/8ec8966e6a234ce1a1f2e5edb98194d3/catching-fire-hunger-games-book-two-volume-2-taschenbuch-suzanne-collins-englisch.jpeg"
+  },{
+    name: "Hunger Games 3",
+    genre: "Dystopian",
+    stars: 4,
+    
+    picture: "https://images.thalia.media/07/-/dd67bf3750bb44e9a814fbd0da1bbc60/mockingjay-hunger-games-book-three-volume-3-taschenbuch-suzanne-collins-englisch.jpeg"
   }, {
     name: "Maze runner",
     genre: "Dystopian",
     stars: 5,
     picture: "https://whatshotblog.com/wp-content/uploads/2014/09/unnamed.jpg.webp"
+  },{
+    name: "Maze runner 2",
+    genre: "Dystopian",
+    stars: 4,
+    picture: "https://images.thalia.media/00/-/6de9c0bf7f3a48df9fc801c3e8a8206c/maze-runner-2-the-scorch-trials-taschenbuch-james-dashner-englisch.jpeg"
+  },{
+    name: "Maze runner 3",
+    genre: "Dystopian",
+    stars: 3,
+    picture: "https://i.weltbild.de/p/maze-runner-the-death-cure-291776208.jpg?v=2&wp=_max"
   }, {
     name: "Haunting Adeline",
     genre: "Dystopian",

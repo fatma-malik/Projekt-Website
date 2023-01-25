@@ -65,21 +65,6 @@ label {
   border-color: #000000;
 }
 
-.bookDetails {
-  height: 450px;
-  width: 330px;
-  display: flex;
-  column-count: 2;
-  position: relative;
-  margin-left: 33px;
-}
-
-#textDetails {
-  position: relative;
-  margin-left: 15%;
-  margin-top: 40%;
-}
-
 #titel {
   text-align: center;
 }
@@ -91,15 +76,6 @@ label {
   font-size: 16px;
 }
 
-.coverArt {
-  height: 300px;
-  width: 200px;
-}
-
-.picturesGenre {
-  justify-content: space-evenly;
-  column-count: 4;
-}
 
 .romancePic {
   height: 100px;
@@ -134,12 +110,52 @@ label {
 }
 
 button {
-  justify-content: space-evenly;
-  column-count: 4;
   border: none;
   padding: 0;
   background: none;
   position: relative;
-  left: 25%;
-  margin-left: 20px;
+  padding: 1em;
+  font-family: 'Nobile', Helvetica, Arial, sans-serif, Bold;
+
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  height: 300px;
+  width: 200px;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.bookInfoElement {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bookDetail {
+  height: 450px;
+  width: 320px;
+  overflow: hidden;
+  margin-left: 5%;
+  display:inline-block; vertical-align:top;
+}
+
+#textDetails {
+  padding: 1em;
+  flex-direction: row;
+}
+
+.coverArt {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+
+#textDetails {
+  display:inline-block;
+  margin-left: 5%;
 }

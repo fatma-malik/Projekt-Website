@@ -23,7 +23,7 @@ function saveBooks(json) {
 
 // löscht Bücher beim Aufruf
 function clearBooks() {
-  document.getElementById("table").innerHTML = "";
+  document.getElementById("books").innerHTML = "";
   document.getElementById("bookDetails").innerHTML = "";
 }
 
@@ -44,17 +44,17 @@ function showBooks(genre) {
 // Zeigt Bücher und erstellt das Format
 function showBook(book) {
 
-  let table = document.getElementById("table");
+  let bookContainer = document.getElementById("books");
 
-  let td = document.createElement("td");
-  table.appendChild(td);
-  td.type = "table";
+  let bookElement = document.createElement("div");
+  bookContainer.appendChild(bookElement);
+  bookElement.setAttribute('class', "book");
 
   const picture = book.picture;
   const name = book.name;
 
   let button = document.createElement("button");
-  td.appendChild(button);
+  bookElement.appendChild(button);
   button.type = "button";
   button.addEventListener("click", function onclick() { bookDetails(book)});
 
@@ -65,11 +65,6 @@ function showBook(book) {
   img.setAttribute('id', name);
   img.setAttribute('class', "coverArt")
 
-  if (books.length == 5) {
-    let lineBreak = document.createElement("br");
-    img.appendChild(lineBreak);
-  }
-
 }
 
 // Zeigt Details wenn man auf das Buch clickt
@@ -77,11 +72,11 @@ function bookDetails(book) {
 
   clearBooks();
 
-  let table = document.getElementById("bookDetails");
+  let bookInformation = document.getElementById("bookDetails");
 
-  let td = document.createElement("td");
-  table.appendChild(td);
-  td.type = "table"
+  let bookInfoElement = document.createElement("div");
+  bookInformation.appendChild(bookInfoElement);
+  bookInfoElement.setAttribute('class', "bookDetail");
 
   const detailsName = book.name;
   const detailsGenre = book.genre;
@@ -89,17 +84,17 @@ function bookDetails(book) {
   const detailsPicture = book.picture;
 
   let img = document.createElement("img");
-  td.appendChild(img);
+  bookInfoElement.appendChild(img);
   img.type = "img";
   img.setAttribute('src', detailsPicture);
   img.setAttribute('id', detailsName);
-  img.setAttribute('class', "bookDetails");
+  img.setAttribute('class', "coverArt")
 
   let p = document.createElement("p");
-  table.appendChild(p);
-  p.setAttribute('id', "textDetails")
+  bookInformation.appendChild(p);
+  p.setAttribute('id', "textDetails");
 
-  p.innerHTML = ` Name: ${detailsName}` + ` Genre: ${detailsGenre}` + ` Stars: ${detailsStars}`; 
+  p.innerHTML = `<br/><br/><br/><br/><br/><br/> Name: ${detailsName} <br/> Genre: ${detailsGenre} <br/> Stars: ${detailsStars}`; 
 
   console.log(p);
 
