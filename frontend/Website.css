@@ -75,32 +75,59 @@ label {
   column-count: 4;
   font-size: 16px;
 }
-
+.romance-txt {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  font-size: 28px;
+  color: #ffffff;
+  font-family: 'Corben', Georgia, Times, serif;
+}
 .romancePic {
-  height: 200px;
-  width: 400px;
-  columns: 1;
+  height: 150px;
+  width: 320px;
   border-radius: 10%;
 }
 
+.dystopian-txt {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  font-size: 28px;
+  color: #f4f7f8;
+  font-family: 'Corben', Georgia, Times, serif;
+}
 .dystopianPic {
-  height: 200px;
-  width: 400px;
-  columns: 2;
+  height: 150px;
+  width: 320px;
   border-radius: 10%;
 }
 
+.contemporary-txt {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  font-size: 28px;
+  color: #ffffff;
+  font-family: 'Corben', Georgia, Times, serif;
+}
 .contemporaryPic {
-  height: 200px;
-  width: 400px;
-  columns: 3;
+  height: 150px;
+  width: 320px;
   border-radius: 10%;
 }
 
+.fantasy-txt {
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  font-size: 28px;
+  color: #ffffff;
+  font-family: 'Corben', Georgia, Times, serif;
+}
 .fantasyPic {
-  height: 200px;
-  width: 400px;
-  columns: 4;
+  height: 150px;
+  width: 320px;
   border-radius: 10%;
 }
 
