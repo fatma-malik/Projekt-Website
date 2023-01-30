@@ -20,17 +20,28 @@
     <a href="Home.html">Home</a>
   </div>
 
-  <form action="http://localhost:8080/new_book" method="post" id="form"><br>
-    <label for="name">Name</label><br>
-    <input type="text" id="formName" name="formName"><br><br>
-    <label for="genre">Genre</label><br>
-    <input type="text" id="formGenre" name="formGenre"><br><br>
-    <label for="stars">Stars</label><br>
-    <input type="text" id="formStars" name="formStars"><br><br>
-    <label for="stars">URL</label><br>
-    <input type="text" id="picture" name="picture"><br><br>
-    <input type="submit" value="Submit"><br><br>
-  </form> 
+        <br><br>
+  <div class="row">
+    <div class="col-md-12">
+      <form action="http://localhost:8080/new_book" method="post"><br>
+        <h1> New Book </h1>
+        <fieldset>
+          
+          <label for="name">Name:</label>
+          <input type="text" id="formName" name="formName"><br>
+          <label for="genre">Genre</label><br>
+          <input type="text" id="formGenre" name="formGenre"><br>
+          <label for="stars">Stars</label><br>
+          <input type="text" id="formStars" name="formStars"><br>
+          <label for="stars">URL</label><br>
+          <input type="text" id="picture" name="picture"><br>
+              
+        </fieldset>
+        <button type="submit" id="submit">submit</button>
+        
+       </form>
+        </div>
+      </div>
 
   <script src="Website.js"></script>
 </body>
