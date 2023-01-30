@@ -8,12 +8,14 @@ let books = [{
   name: "Love from a to z",
   genre: "Romance",
   stars: 1,
-  picture: "https://m.media-amazon.com/images/I/71TksBXSXNL.jpg"
+  picture: "https://m.media-amazon.com/images/I/71TksBXSXNL.jpg",
+  opinion: "this book was not my cup of tea to be honest..."
 }, {
     name: "The spanish love deception",
     genre: "Romance",
     stars: 3,
-    picture: "https://images.thalia.media/-/BF2000-2000/767af4f8d2994221b028493fe87f0423/the-spanish-love-deception-taschenbuch-elena-armas-englisch.jpeg"
+    picture: "https://images.thalia.media/-/BF2000-2000/767af4f8d2994221b028493fe87f0423/the-spanish-love-deception-taschenbuch-elena-armas-englisch.jpeg",
+    opinion: "this book was not my cup of tea to be honest..."
   }, {
     name: "Dear enemy",
     genre: "Romance",
@@ -212,17 +214,20 @@ app.post("/new_book", (req, res) => {
   let formName = req.body.formName
   let formGenre = req.body.formGenre
   let formStars = req.body.formStars
+  let formOpinion = req.body.formOpinion
   let picture = req.body.picture
   console.log(req.body)
   console.log("name: " + formName)
   console.log("genre: " + formGenre)
   console.log("stars: " + formStars)
+  console.log("opinion: " + formOpinion)
   console.log("picture: " + picture)
 
   let book = {
     name: formName,
     genre: formGenre,
     stars: formStars,
+    opinion: formOpinion,
     picture: picture
   }
 

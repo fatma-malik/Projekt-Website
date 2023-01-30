@@ -82,6 +82,7 @@ function bookDetails(book) {
   const detailsGenre = book.genre;
   const detailsStars = book.stars;
   const detailsPicture = book.picture;
+  const detailsOpinion = book.opinion;
 
   let img = document.createElement("img");
   bookInfoElement.appendChild(img);
@@ -94,7 +95,7 @@ function bookDetails(book) {
   bookInformation.appendChild(p);
   p.setAttribute('id', "textDetails");
 
-  p.innerHTML = `<br/><br/><br/><br/><br/><br/> Name: ${detailsName} <br/> Genre: ${detailsGenre} <br/> Stars: ${detailsStars}`; 
+  p.innerHTML = `<br/><br/><br/><br/><br/><br/> Name: ${detailsName} <br/> Genre: ${detailsGenre} <br/> Stars: ${detailsStars} <br/> Opinion: ${detailsOpinion}`; 
 
   console.log(p);
 
