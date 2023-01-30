@@ -55,10 +55,7 @@ label {
   width: 500px;
   background-color: rgb(255, 128, 139);
   border-radius: 25%;
-  position: relative;
-  left: 29%;
-  display: flex;
-  justify-content: center;
+  margin: auto;
   align-items: center;
   font-size: 18px;
   border-width: 10%;  
