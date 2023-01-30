@@ -4,6 +4,7 @@ h1 {
 
 p {
   font-family: 'Nobile', Helvetica, Arial, sans-serif;
+  margin: 10%;
 }
 
 .topnav {
@@ -68,10 +69,9 @@ label {
 
 .center {
   display: flex;
-  position: absolute;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 .romance-txt {
   position: absolute;
